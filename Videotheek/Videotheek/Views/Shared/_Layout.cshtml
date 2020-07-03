@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div>
+        <img src="~/Images/videoVerhuur.jpg" alt="VDAB MOVIES" />
+    </div>
+    <div>
+        @if (Session["Klant"] == null)
+        {
+            <h4>Eerst aanmelden om te kunnen huren !</h4>
+        }
+        else
+        {
+            var klant = (Videotheek.Models.Klant)Session["Klant"];
+            <h4>Welkom @klant.Voornaam @klant.Naam</h4>
+        }
+    </div>
+    <div>
+       <h4><a href="@Url.Action("Index", "Home")">Uitloggen en naar beginpagina</a></h4> 
+    </div>
+    
+    <div>
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Sander Smet</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

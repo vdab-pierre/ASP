@@ -1,0 +1,13 @@
+﻿@model List<Videotheek.Models.Genre>
+@{
+    ViewBag.Title = "Verhuringen";
+}
+<div>
+    <h3>Klik op het gewenste GENRE</h3>
+</div>
+<ul class="nav nav-pills">
+    @foreach (var genre in Model)
+    {
+        <li><a href="@Url.Action("Details", "Home", new { id=genre.GenreNr, naam=genre.Naam})">@genre.Naam</a></li>
+    }
+</ul>

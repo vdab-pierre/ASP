@@ -1,0 +1,31 @@
+﻿@model List<Videotheek.Models.Film>
+@{
+    ViewBag.Title = "Winkelmandje";
+}
+<div>
+    <h3><a href="@Url.Action("Afrekenen","Home")">Afrekenen</a></h3>
+</div>
+<h1>Winkelmandje</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titel</th>
+            <th>Prijs</th>
+            <th>Verwijderen</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var film in Model)
+        {
+            <tr>
+                <td>@film.Titel</td>
+                <td>@Html.DisplayFor(f => film.Prijs)</td>
+                <td><a href="@Url.Action("Verwijderen", "Home", new { id=film.BandNr})">Verwijderen</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a href="@Url.Action("Verhuringen", "Home")">Verder winkelen</a>
+</div>
+

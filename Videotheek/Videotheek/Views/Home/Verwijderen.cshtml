@@ -1,0 +1,14 @@
+﻿@model Videotheek.Models.Film
+@{
+    ViewBag.Title = "Verwijderen";
+}
+
+<h2>Verwijder gehuurde film</h2>
+<div>
+    <h4>Ben je zeker dat je "@Model.Titel" niet wil huren?</h4>
+</div>
+<ul class="nav nav-pills">
+    <li><a href="@Url.Action("Verwijdering", "Home", new { id=Model.BandNr})">Ja</a></li>
+    <li><a href="@Url.Action("Winkelmandje", "Home")">Neen</a></li>
+</ul>
+

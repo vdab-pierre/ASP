@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Videotheek", "Videotheek\Videotheek.csproj", "{9983D281-08C8-4231-A5C9-AE17F37C42B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Cultuur", "..\..\CursusRepo1\MVCCursus\MVC_Cultuur\MVC_Cultuur.csproj", "{8B9A485B-3373-48E8-B558-DF294906484C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9983D281-08C8-4231-A5C9-AE17F37C42B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9983D281-08C8-4231-A5C9-AE17F37C42B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9983D281-08C8-4231-A5C9-AE17F37C42B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9983D281-08C8-4231-A5C9-AE17F37C42B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B9A485B-3373-48E8-B558-DF294906484C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9A485B-3373-48E8-B558-DF294906484C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9A485B-3373-48E8-B558-DF294906484C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9A485B-3373-48E8-B558-DF294906484C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F75DE262-015F-4B79-8FA4-70753A410221}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿@model List<Videotheek.Models.Film> 
+@{
+    ViewBag.Title = "Afrekenen";
+}
+
+<h2>Afrekenen</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titel</th>
+            <th>Prijs</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var film in Model)
+        {
+            <tr>
+                <td>@film.Titel</td>
+                <td>@Html.DisplayFor(f => film.Prijs)</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Totaal:</td>
+            <td>@(String.Format("{0:€ #,##0.00}", ViewBag.totaal))</td>
+        </tr>
+    </tfoot>
+</table>
+
+<div>
+    <div>Wordt gefactureerd aan:</div>
+    <div>@ViewBag.klant.Voornaam @ViewBag.klant.Naam</div>
+    <div>@ViewBag.klant.Straat_Nr</div>
+    <div>@ViewBag.klant.PostCode @ViewBag.Klant.Gemeente</div>
+</div>

@@ -1,0 +1,13 @@
+﻿@model Videotheek.Models.Klant
+@{
+    ViewBag.Title = "Aanmelden";
+}
+@if (Model != null)
+{
+    <h3><a href="@Url.Action("Verhuringen", "Home")">Ga naar verhuringen</a></h3>
+}
+else
+{
+    <h3><a href="@Url.Action("Index", "Home")">Foutieve gegevens, probeer opnieuw</a></h3>
+}
+
